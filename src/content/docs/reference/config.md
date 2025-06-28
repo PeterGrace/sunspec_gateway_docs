@@ -6,6 +6,7 @@ Example config.yaml
 
 ```yaml
 ---
+hass_enabled: true
 mqtt_server_addr: "10.174.2.40"
 mqtt_server_port: 1883
 mqtt_username: "pwrcell_rs"
@@ -28,6 +29,7 @@ models:
 #### Root of config
 | field | type | description |
 | ----- | ---- | ----------- |
+| .hass_enabled | bool | Optional value to turn off homeassistant config payloads, good for if you want to test this software without updating your existing home assistant yet. |
 | .mqtt_server_addr | string | ip address for mqtt server |
 | .mqtt_server_port | integer | port number for mqtt server, normally 1883 |
 | .mqtt_username | String | username with access to interact with MQTT server |
