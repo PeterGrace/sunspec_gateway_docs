@@ -29,7 +29,7 @@ models:
 #### Root of config
 | field | type | description |
 | ----- | ---- | ----------- |
-| .hass_enabled | bool | Optional value to turn off homeassistant config payloads, good for if you want to test this software without updating your existing home assistant yet. |
+| .hass_enabled | bool | Optional value to turn off homeassistant config payloads, good for if you want to test this software without updating your existing home assistant yet.  Defaults to true.|
 | .mqtt_server_addr | string | ip address for mqtt server |
 | .mqtt_server_port | integer | port number for mqtt server, normally 1883 |
 | .mqtt_username | String | username with access to interact with MQTT server |
